@@ -30,13 +30,16 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    
 }
 
 p {
     margin: 0;
     color: white;
-    font-size: 88px;
+    font-size: 72px;
+    overflow: auto;
 }
+
 #button-container {
     background-color: black;
     flex: 7;
@@ -56,6 +59,15 @@ p {
     width: 80px;
     height: 80px;
     font-family: "Inter", sans-serif;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+.btn:active {
+    filter: brightness(0.8);
+    transform: translateY(2px);
 }
 
 #button-container .wide {
